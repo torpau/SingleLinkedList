@@ -9,10 +9,8 @@ public class StackTest extends LinkedList {
     @Test
     @DisplayName("Test if item added to stack")
     void testIfAddedToStack(){
-
         Stack testStack = new Stack();
         testStack.push(1);
-
 
         assertEquals(1, testStack.peek());
     }
@@ -20,11 +18,11 @@ public class StackTest extends LinkedList {
     @Test
     @DisplayName("Test if added item is on top")
     void testIfAddedToTop(){
-    Stack testStack = new Stack();
-    testStack.push(1);
-    testStack.push(2);
+        Stack testStack = new Stack();
+        testStack.push(1);
+        testStack.push(2);
 
-    assertEquals(2, testStack.peek());
+        assertEquals(2, testStack.peek());
     }
 
     @Test

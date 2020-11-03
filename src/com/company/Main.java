@@ -41,9 +41,7 @@ public class Main {
         stack.push(3);
 
         System.out.println("Item on top on stack is: " + stack.peek());
-
         stack.pop();
-
         System.out.println("Item on top on stack after pop is: " + stack.peek());
    }
 }
