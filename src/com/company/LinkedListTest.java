@@ -13,7 +13,6 @@ public class LinkedListTest {
         testList.add(666);
 
         assertEquals(666, testList.get(0), "Adding item did not work");
-
     }
 
     @Test
@@ -27,7 +26,6 @@ public class LinkedListTest {
         assertEquals(6, testList.get(0), "Getting item did not work");
         assertEquals(66, testList.get(1), "Getting item did not work");
         assertEquals(666, testList.get(2), "Getting item did not work");
-
     }
 
     @Test
@@ -94,35 +92,35 @@ public class LinkedListTest {
     //remove(i) -> ta bort elementet på position/index i
     @Test
     @DisplayName("Test if value is removed")
-    void deleteValueAtGivenIndex(){
-    LinkedList testList = new LinkedList();
+    void deleteValueAtGivenIndex() {
+        LinkedList testList = new LinkedList();
 
-    testList.add(1);
-    testList.add(2);
-    testList.add(3);
+        testList.add(1);
+        testList.add(2);
+        testList.add(3);
 
-    assertEquals(2,testList.get(1) );
+        assertEquals(2,testList.get(1));
 
-    testList.remove(1);
+        testList.remove(1);
 
-    assertEquals(3, testList.get(1) );
-
+        assertEquals(3, testList.get(1));
     }
-    //empty() -> true om listan är tom, annars false
 
     @Test
     @DisplayName("Test if list is empty")
-    void testIfListIsEmpty(){
+    void testIfListIsEmpty() {
         LinkedList testList = new LinkedList();
 
         assertTrue(testList.empty());
     }
+
     @Test
     @DisplayName("Test if list is not empty")
-    void testIfListIsNotEmpty(){
+    void testIfListIsNotEmpty() {
         LinkedList testList = new LinkedList();
+
         testList.add(0);
+
         assertFalse(testList.empty());
     }
-
 }

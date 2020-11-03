@@ -8,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class StackTest extends LinkedList {
     @Test
     @DisplayName("Test if item added to stack")
-    void testIfAddedToStack(){
+    void testIfAddedToStack() {
         Stack testStack = new Stack();
         testStack.push(1);
 
@@ -17,7 +17,7 @@ public class StackTest extends LinkedList {
 
     @Test
     @DisplayName("Test if added item is on top")
-    void testIfAddedToTop(){
+    void testIfAddedToTop() {
         Stack testStack = new Stack();
         testStack.push(1);
         testStack.push(2);
@@ -27,7 +27,7 @@ public class StackTest extends LinkedList {
 
     @Test
     @DisplayName("Test if item on top is removed")
-    void testIfItemOnTopGone(){
+    void testIfItemOnTopGone() {
         Stack testStack = new Stack();
         testStack.push(1);
         testStack.push(2);
@@ -36,6 +36,5 @@ public class StackTest extends LinkedList {
         assertEquals(3, testStack.peek());
         testStack.pop();
         assertEquals(2, testStack.peek());
-
     }
 }

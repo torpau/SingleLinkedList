@@ -11,8 +11,8 @@ public class LinkedList {
             Node newNode = new Node();
             Node currNode = head;
             Node prevNode = null;
-            if (index != 0) {
-                for (int i = 0; i <= index - 1; i++) {
+            if(index != 0) {
+                for(int i = 0; i <= index - 1; i++) {
                     prevNode = currNode;
                     currNode = currNode.next;
                 }
@@ -38,7 +38,7 @@ public class LinkedList {
             head = newNode;
         } else {
             currNode = head;
-            while (currNode.next != null) {
+            while(currNode.next != null) {
                 currNode = currNode.next;
             }
             newNode.value = value;
@@ -65,43 +65,42 @@ public class LinkedList {
         int i = 0;
         if(currNode != null) {
             do {
-                if (currNode.value == value) {
+                if(currNode.value == value) {
                     return true;
                 }
                 currNode = currNode.next;
                 i++;
-            } while (i < size);
+            } while(i < size);
         }
         return false;
     }
 
-    void remove(int index ){
+    void remove(int index ) {
         Node currNode = head;
         Node prevNode = head;
 
         try {
-            if (index != 0) {
-                for (int i = 0; i <= index - 1; i++) {
+            if(index != 0) {
+                for(int i = 0; i <= index - 1; i++) {
                     prevNode = currNode;
                     currNode = currNode.next;
                 }
                 prevNode.next = currNode.next;
-            } else if (index == 0) {
+            } else if(index == 0) {
                 head = currNode.next;
             }
             size--;
-        }catch (NullPointerException e){
+        } catch(NullPointerException e) {
             System.err.println(">>>Invalid index<<<");
         }
     }
+
     boolean empty(){
         if(head == null){
             return true;
         }
         return false;
-
     }
-
 }
 
 // -------------------------
@@ -109,6 +108,5 @@ public class LinkedList {
 class Node {
     Node next;
     int value;
-
 }
 

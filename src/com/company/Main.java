@@ -30,6 +30,7 @@ public class Main {
         list.empty();// -> false
         System.out.println("List empty -> " + list.empty());
         System.out.println(" ");
+        
         //---------------------------------------------------
         // Här efter kommer stacken
         //---------------------------------------------------
