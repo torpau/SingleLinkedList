@@ -124,4 +124,5 @@ public class LinkedListTest {
         testList.add(0);
         assertFalse(testList.empty());
     }
+
 }
