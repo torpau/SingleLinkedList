@@ -95,7 +95,33 @@ public class LinkedListTest {
     @Test
     @DisplayName("Test if value is removed")
     void deleteValueAtGivenIndex(){
+    LinkedList testList = new LinkedList();
+
+    testList.add(1);
+    testList.add(2);
+    testList.add(3);
+
+    assertEquals(2,testList.get(1) );
+
+    testList.remove(1);
+
+    assertEquals(3, testList.get(1) );
 
     }
     //empty() -> true om listan är tom, annars false
+
+    @Test
+    @DisplayName("Test if list is empty")
+    void testIfListIsEmpty(){
+        LinkedList testList = new LinkedList();
+        
+        assertTrue(testList.empty());
+    }
+    @Test
+    @DisplayName("Test if list is not empty")
+    void testIfListIsNotEmpty(){
+        LinkedList testList = new LinkedList();
+        testList.add(0);
+        assertFalse(testList.empty());
+    }
 }

@@ -6,14 +6,30 @@ public class Main {
 
         //creating a new linkedlist
         LinkedList list = new LinkedList();
+        list.add(1);
+        list.add(12321);
+
+
+        list.remove(3);
+
+        System.out.println(list.getSize());
+
+
+
+        for(int i = 0; i < list.getSize(); i++) {
+            System.out.println(list.get(i));
+        }
 
         //add(e) -> Lägger till element e till slutet av listan
-        list.add(1);
+     /*   list.add(1);
+        list.add(1, 2);
         list.add(3);
         list.add(4);
 
+        list.remove(1);
+
         //add(i, e) -> Lägger till element e till position/index i, element till "höger" om i flyttar ett steg till höger
-        list.add(1, 2);
+
 
         //get(i) -> returnerar elementet på position/index i
         // ---------------------------------------
@@ -39,5 +55,5 @@ public class Main {
 
 
         //System.out.println("Size: " + list.getSize());
-    }
+*/    }
 }

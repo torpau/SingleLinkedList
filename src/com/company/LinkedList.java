@@ -33,7 +33,6 @@ public class LinkedList {
     void add(int value) {
         Node newNode = new Node();
         Node currNode = head;
-
         if(head == null) {
             newNode.value = value;
             head = newNode;
@@ -63,7 +62,6 @@ public class LinkedList {
 
     boolean contains(int value) {
         Node currNode = head;
-
         int i = 0;
         if(currNode != null) {
             do {
@@ -77,6 +75,32 @@ public class LinkedList {
         return false;
     }
 
+    void remove(int index ){
+        Node currNode = head;
+        Node prevNode = head;
+
+        try {
+            if (index != 0) {
+                for (int i = 0; i <= index - 1; i++) {
+                    prevNode = currNode;
+                    currNode = currNode.next;
+                }
+                prevNode.next = currNode.next;
+            } else if (index == 0) {
+                head = currNode.next;
+            }
+            size--;
+        }catch (NullPointerException e){
+            System.err.println(">>>Invalid index<<<");
+        }
+    }
+    boolean empty(){
+        if(head == null){
+            return true;
+        }
+        return false;
+
+    }
 
 }
 
