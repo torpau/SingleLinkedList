@@ -57,16 +57,16 @@ public class LinkedListTest {
     @DisplayName("test to get size from list")
     void getSizeFromListTest() {
         LinkedList testList = new LinkedList();
-        assertEquals(0, testList.getSize(), "Size does not match");
+        assertEquals(0, testList.size(), "Size does not match");
 
         testList.add(1);
-        assertEquals(1, testList.getSize(), "Size does not match");
+        assertEquals(1, testList.size(), "Size does not match");
 
         testList.add(2);
-        assertEquals(2, testList.getSize(), "Size does not match");
+        assertEquals(2, testList.size(), "Size does not match");
 
         testList.add(4);
-        assertEquals(3, testList.getSize(), "Size does not match");
+        assertEquals(3, testList.size(), "Size does not match");
     }
 
     @Test
@@ -114,7 +114,7 @@ public class LinkedListTest {
     @DisplayName("Test if list is empty")
     void testIfListIsEmpty(){
         LinkedList testList = new LinkedList();
-        
+
         assertTrue(testList.empty());
     }
     @Test

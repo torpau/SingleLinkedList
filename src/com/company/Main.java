@@ -7,53 +7,27 @@ public class Main {
         //creating a new linkedlist
         LinkedList list = new LinkedList();
         list.add(1);
-        list.add(12321);
+        list.add(2);
+        list.add(3);
 
+        list.size() ;//-> 3
+        System.out.println("List size -> " + list.size());
+
+        list.add(0,99);
+        list.size(); //-> 4
+        System.out.println("List size -> " + list.size());
+
+        list.get(0); //-> 99
+        System.out.println("List get(0) -> " + list.get(0));
+
+        list.get(3); // -> 3
+        System.out.println("List get(3) -> " + list.get(3));
 
         list.remove(3);
+        list.size();// -> 3
+        System.out.println("List size -> " + list.size());
 
-        System.out.println(list.getSize());
-
-
-
-        for(int i = 0; i < list.getSize(); i++) {
-            System.out.println(list.get(i));
-        }
-
-        //add(e) -> Lägger till element e till slutet av listan
-     /*   list.add(1);
-        list.add(1, 2);
-        list.add(3);
-        list.add(4);
-
-        list.remove(1);
-
-        //add(i, e) -> Lägger till element e till position/index i, element till "höger" om i flyttar ett steg till höger
-
-
-        //get(i) -> returnerar elementet på position/index i
-        // ---------------------------------------
-        for(int i = 0; i < list.getSize(); i++) {
-            System.out.println(list.get(i));
-        }
-        // ---------------------------------------
-
-        //contains(e) -> true om e finns i listan annars false
-        System.out.println("Searching for number 3 in our list!\nValue found: " + list.contains(3));
-
-        //size() -> antalet element i listan
-        System.out.println("Size of list: " + list.getSize());
-
-
-
-        //remove(i) -> ta bort elementet på position/index i
-
-
-        //empty() -> true om listan är tom, annars false
-
-
-
-
-        //System.out.println("Size: " + list.getSize());
-*/    }
+        list.empty();// -> false
+        System.out.println("List empty -> " + list.empty());
+   }
 }

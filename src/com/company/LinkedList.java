@@ -56,7 +56,7 @@ public class LinkedList {
         return currNode.value;
     }
 
-    int getSize() {
+    int size() {
         return this.size;
     }
 
