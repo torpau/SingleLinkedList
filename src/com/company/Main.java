@@ -29,5 +29,21 @@ public class Main {
 
         list.empty();// -> false
         System.out.println("List empty -> " + list.empty());
+        System.out.println(" ");
+        //---------------------------------------------------
+        // Här efter kommer stacken
+        //---------------------------------------------------
+
+        Stack stack = new Stack();
+        System.out.println("adding item 1,2,3 to stack");
+        stack.push(1);
+        stack.push(2);
+        stack.push(3);
+
+        System.out.println("Item on top on stack is: " + stack.peek());
+
+        stack.pop();
+
+        System.out.println("Item on top on stack after pop is: " + stack.peek());
    }
 }
